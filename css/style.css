@@ -405,6 +405,9 @@ a { color: var(--accent); text-underline-offset: 3px; }
   align-items: center;
 }
 .about-head { grid-area: head; }
+@media (min-width: 901px) {
+  .about-photo { align-self: start; margin-top: 18px; }
+}
 .about-photo { grid-area: photo; }
 .about-text { grid-area: text; }
 
@@ -531,7 +534,9 @@ a { color: var(--accent); text-underline-offset: 3px; }
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   grid-auto-rows: auto;
-  gap: clamp(20px, 2.2vw, 28px);
+  gap: clamp(18px, 1.8vw, 24px);
+  max-width: 1060px;
+  margin-inline: auto;
 }
 .service {
   display: grid;
@@ -552,7 +557,7 @@ a { color: var(--accent); text-underline-offset: 3px; }
 }
 .service img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 3 / 2;
   object-fit: cover;
   transition: transform .8s var(--ease);
 }
@@ -571,9 +576,9 @@ a { color: var(--accent); text-underline-offset: 3px; }
   align-self: start;
 }
 .service p:last-child {
-  margin: 0 24px;
-  font-size: 15.5px;
-  line-height: 1.7;
+  margin: 0 20px;
+  font-size: 14.5px;
+  line-height: 1.65;
 }
 
 /* ---------- Come funziona: percorso animato ---------- */
@@ -753,7 +758,7 @@ a { color: var(--accent); text-underline-offset: 3px; }
 
 /* ---------- Contatti ---------- */
 .contact-form {
-  max-width: 600px;
+  max-width: 500px;
   margin-inline: auto;
   background: var(--white);
   border-radius: var(--radius);
@@ -785,7 +790,7 @@ a { color: var(--accent); text-underline-offset: 3px; }
   border-radius: var(--radius-sm);
   transition: border-color .25s, box-shadow .25s, background-color .25s;
 }
-.field textarea { resize: vertical; min-height: 116px; }
+.field textarea { resize: vertical; min-height: 96px; }
 .field input:focus,
 .field textarea:focus {
   outline: none;
