@@ -56,6 +56,7 @@
           <li><a href="#a-chi-mi-rivolgo">A chi mi rivolgo</a></li>
           <li><a href="#approccio">Approccio</a></li>
           <li><a href="#servizi">Servizi</a></li>
+          <li><a href="#eventi">Eventi</a></li>
           <li><a href="#come-funziona">Come funziona</a></li>
           <li><a href="#dove-ricevo">Dove ricevo</a></li>
           <li><a href="#faq">FAQ</a></li>
@@ -253,7 +254,7 @@
                  alt="Mani di una donna in gravidanza appoggiate sul pancione, con un abito grigio">
             <p class="service-tag">Gravidanza e genitorialità</p>
             <h3>Benessere e sostegno</h3>
-            <p>Momenti dedicati al benessere della donna in gravidanza, anche attraverso il massaggio olistico, e un sostegno concreto che accompagna mamma e papà nella nuova famiglia.</p>
+            <p>Momenti dedicati al benessere della donna in gravidanza, anche attraverso il massaggio olistico e il massaggio ossitocinico al seno.</p>
           </article>
         </div>
 
@@ -263,8 +264,113 @@
       </div>
     </section>
 
-    <!-- COME FUNZIONA (bianco) -->
-    <section class="section bg-white" id="come-funziona" aria-labelledby="steps-title">
+    <!-- EVENTI (bianco) -->
+    <section class="section bg-white" id="eventi" aria-labelledby="eventi-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Eventi</p>
+          <h2 id="eventi-title">Yoga in gravidanza, insieme.</h2>
+          <p class="section-intro">Il tuo corpo sta creando una vita: un percorso di gruppo per prendertene cura con dolcezza, tra yoga prenatale e puericultura.</p>
+        </header>
+
+        <article class="event-card reveal">
+          <div class="event-card-media">
+            <img src="https://images.unsplash.com/photo-1767611102585-baf80e9be291?auto=format&fit=crop&w=900&h=700&q=72"
+                 srcset="https://images.unsplash.com/photo-1767611102585-baf80e9be291?auto=format&fit=crop&w=600&h=460&q=72 600w,
+                         https://images.unsplash.com/photo-1767611102585-baf80e9be291?auto=format&fit=crop&w=900&h=700&q=72 900w"
+                 sizes="(max-width: 760px) 92vw, 400px"
+                 width="900" height="700" loading="lazy" decoding="async"
+                 alt="Donna in posizione yoga del bambino su un tappetino, in una stanza luminosa e bianca">
+            <span class="event-badge">Corsi 2026 – 2027</span>
+          </div>
+          <div class="event-card-body">
+            <p class="service-tag">Yoga prenatale · Hridaya</p>
+            <h3>Il tuo corpo sta creando una vita</h3>
+            <p>Lezioni di yoga dedicate alla gravidanza e incontri che uniscono yoga, puericultura e maternage, per vivere questo tempo con più consapevolezza.</p>
+            <p class="event-gift">La prima lezione di prova è gratuita</p>
+            <button class="event-open" type="button" aria-haspopup="dialog" aria-controls="eventi-dialog">
+              Scopri il calendario
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+        </article>
+      </div>
+
+      <!-- Finestra con il calendario degli eventi (le date si inseriscono in js/eventi.js) -->
+      <dialog class="event-dialog" id="eventi-dialog" aria-labelledby="eventi-dialog-title">
+        <div class="ed-inner">
+          <button class="ed-close" type="button" aria-label="Chiudi il calendario">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </button>
+
+          <header class="ed-head">
+            <p class="eyebrow">Corsi 2026 – 2027</p>
+            <h2 id="eventi-dialog-title">Yoga in gravidanza</h2>
+            <p class="ed-lead">Il tuo corpo sta creando una vita. Ti sei chiesta come prendertene cura con dolcezza?</p>
+          </header>
+
+          <div class="ed-grid">
+            <div class="ed-info">
+              <h3 class="ed-subtitle">Lo yoga prenatale ti aiuta a</h3>
+              <ul class="ed-benefits">
+                <li>alleviare mal di schiena e tensioni</li>
+                <li>ridurre lo stress e dormire più serena</li>
+                <li>imparare respirazione e rilassamento, utili verso il parto e anche dopo</li>
+                <li>ascoltare e conoscere il tuo corpo che cambia</li>
+                <li>condividere il percorso con un gruppo di donne</li>
+              </ul>
+
+              <h3 class="ed-subtitle">Puoi scegliere tra due proposte</h3>
+              <div class="ed-offers">
+                <div class="ed-offer">
+                  <span class="ed-dot ed-dot--yoga" aria-hidden="true"></span>
+                  <div>
+                    <p class="ed-offer-title">Solo yoga prenatale</p>
+                    <p>Lezioni di yoga dedicate alla gravidanza, adattate a ogni trimestre.</p>
+                  </div>
+                </div>
+                <div class="ed-offer">
+                  <span class="ed-dot ed-dot--hridaya" aria-hidden="true"></span>
+                  <div>
+                    <p class="ed-offer-title">Hridaya: yoga + puericultura</p>
+                    <p>Un incontro a settimana di 90 minuti che unisce yoga prenatale, puericultura e maternage nel periodo perinatale e postnatale, insieme a me come puericultrice. Per il terzo anno consecutivo.</p>
+                  </div>
+                </div>
+              </div>
+
+              <p class="ed-note"><strong>La prima lezione di prova è gratuita.</strong> Prima di iniziare, chiedi il parere della tua ginecologa o del tuo ginecologo.</p>
+            </div>
+
+            <div class="ed-calendar" aria-labelledby="cal-title">
+              <div class="cal-head">
+                <button class="cal-nav" type="button" data-cal="prev" aria-label="Mese precedente">
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <h3 class="cal-title" id="cal-title" aria-live="polite">Mese</h3>
+                <button class="cal-nav" type="button" data-cal="next" aria-label="Mese successivo">
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+              </div>
+              <div class="cal-filters" role="group" aria-label="Filtra per proposta">
+                <button type="button" class="cal-filter is-active" data-filter="all" aria-pressed="true">Tutti</button>
+                <button type="button" class="cal-filter" data-filter="yoga" aria-pressed="false"><span class="ed-dot ed-dot--yoga" aria-hidden="true"></span>Yoga prenatale</button>
+                <button type="button" class="cal-filter" data-filter="hridaya" aria-pressed="false"><span class="ed-dot ed-dot--hridaya" aria-hidden="true"></span>Hridaya</button>
+              </div>
+              <div class="cal-grid"></div>
+              <div class="cal-list" aria-live="polite"></div>
+            </div>
+          </div>
+
+          <footer class="ed-foot">
+            <p>Per noi contano i volti e l'energia delle persone: prima di iniziare desideriamo guardarti negli occhi e conoscerti davvero. Scrivici per un <strong>incontro conoscitivo gratuito e senza impegno</strong>: qui puoi fare tutte le domande che vuoi.</p>
+            <button class="btn btn-primary" type="button" data-book="Vorrei ricevere il calendario dei corsi di yoga in gravidanza 2026-2027 e fissare un incontro conoscitivo gratuito.">Richiedi il calendario</button>
+          </footer>
+        </div>
+      </dialog>
+    </section>
+
+    <!-- COME FUNZIONA (rosa) -->
+    <section class="section bg-soft" id="come-funziona" aria-labelledby="steps-title">
       <div class="container">
         <header class="section-head reveal">
           <p class="eyebrow">Come funziona</p>
@@ -297,8 +403,8 @@
       </div>
     </section>
 
-    <!-- DOVE RICEVO (rosa) -->
-    <section class="section bg-soft" id="dove-ricevo" aria-labelledby="dove-title">
+    <!-- DOVE RICEVO (bianco) -->
+    <section class="section bg-white" id="dove-ricevo" aria-labelledby="dove-title">
       <div class="container container--narrow">
         <header class="section-head reveal">
           <p class="eyebrow">Dove ricevo</p>
@@ -325,8 +431,8 @@
       </div>
     </section>
 
-    <!-- FAQ (bianco) -->
-    <section class="section bg-white" id="faq" aria-labelledby="faq-title">
+    <!-- FAQ (rosa) -->
+    <section class="section bg-soft" id="faq" aria-labelledby="faq-title">
       <div class="container container--narrow">
         <header class="section-head reveal">
           <p class="eyebrow">FAQ</p>
@@ -388,8 +494,8 @@
       </div>
     </section>
 
-    <!-- CONTATTI (rosa) -->
-    <section class="section bg-soft" id="contatti" aria-labelledby="contatti-title">
+    <!-- CONTATTI (bianco) -->
+    <section class="section bg-white" id="contatti" aria-labelledby="contatti-title">
       <div class="container">
         <header class="section-head reveal">
           <p class="eyebrow">Contatti</p>
@@ -453,6 +559,7 @@
           <li><a href="#a-chi-mi-rivolgo">A chi mi rivolgo</a></li>
           <li><a href="#approccio">Approccio</a></li>
           <li><a href="#servizi">Servizi</a></li>
+          <li><a href="#eventi">Eventi</a></li>
           <li><a href="#come-funziona">Come funziona</a></li>
           <li><a href="#dove-ricevo">Dove ricevo</a></li>
           <li><a href="#faq">FAQ</a></li>
@@ -469,6 +576,7 @@
     </div>
   </footer>
 
+  <script src="js/eventi.js" defer></script>
   <script src="js/main.js" defer></script>
 </body>
 </html>
